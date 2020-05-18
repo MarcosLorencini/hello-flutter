@@ -1,0 +1,9 @@
+
+import 'package:flutter/material.dart';
+
+//direciona o fluxo dinamico para outra pagina
+Future push(BuildContext context, Widget page) {
+  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+    return page;
+  }));
+}
